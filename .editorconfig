@@ -13,5 +13,11 @@ trim_trailing_whitespace = true
 [{compose.yaml,compose.*.yaml}]
 indent_size = 2
 
+[*.css]
+indent_size = 2
+
 [*.md]
 trim_trailing_whitespace = false
+
+[*.twig]
+indent_size = 2
