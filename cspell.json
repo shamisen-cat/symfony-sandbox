@@ -2,6 +2,7 @@
   "version": "0.2",
   "language": "en",
   "words": [
+    "analyse",
     "anson",
     "blockquotes",
     "bmewburn",
@@ -11,6 +12,7 @@
     "fastcgi",
     "filesize",
     "healthcheck",
+    "importmap",
     "intelephense",
     "isready",
     "junstyle",
@@ -19,6 +21,8 @@
     "nopasswd",
     "opcache",
     "pgsql",
+    "phpstan",
+    "phpunit",
     "realpath",
     "shamisen",
     "symfony"
