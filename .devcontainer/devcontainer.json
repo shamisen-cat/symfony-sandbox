@@ -1,0 +1,21 @@
+{
+  "name": "Symfony Sandbox",
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "php-fpm",
+  "workspaceFolder": "/var/www/html",
+  "remoteUser": "app",
+  "features": {
+    "ghcr.io/devcontainers/features/node:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "junstyle.php-cs-fixer",
+        "mblode.twig-language-2",
+        "xdebug.php-debug"
+      ]
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh"
+}
