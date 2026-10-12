@@ -1,0 +1,23 @@
+# markdownlint configuration
+
+MD001: true   # Disallow skipped heading levels
+MD013: false  # Disable the 80-character line length limit
+MD026: false  # Allow trailing punctuation in headings
+MD028: false  # Allow blank lines between blockquotes
+MD034: false  # Allow bare URLs
+MD036: false  # Allow emphasis used as a heading (e.g. **Title**)
+
+# Unordered list indentation
+MD007:
+  indent: 2
+
+# Allow HTML tags that GitHub supports
+MD033:
+  allowed_elements:
+    - "details"  # Collapsible section
+    - "summary"  # Collapsible summary
+    - "br"       # Line break
+    - "img"      # Image
+    - "kbd"      # Keyboard shortcut (e.g. <kbd>Ctrl</kbd> + <kbd>C</kbd>)
+    - "sup"      # Superscript
+    - "sub"      # Subscript

@@ -1,0 +1,30 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "analyse",
+    "anson",
+    "blockquotes",
+    "bmewburn",
+    "ctype",
+    "dbaeumer",
+    "esbenp",
+    "fastcgi",
+    "filesize",
+    "healthcheck",
+    "importmap",
+    "intelephense",
+    "isready",
+    "junstyle",
+    "mblode",
+    "mlocati",
+    "nopasswd",
+    "opcache",
+    "pgsql",
+    "phpstan",
+    "phpunit",
+    "realpath",
+    "shamisen",
+    "symfony"
+  ]
+}

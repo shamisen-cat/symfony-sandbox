@@ -1,0 +1,26 @@
+---
+description: Layered architecture conventions for Domain, Application, and Infrastructure
+globs: src/**, templates/**, tests/**, config/services.yaml
+alwaysApply: false
+---
+
+# Architecture
+
+## Structure
+
+- Organize each layer by feature (e.g., `Domain/User/`, `Application/User/`, `Infrastructure/User/`)
+- Put code shared across features in each layer's `Shared/` (e.g., `Domain/Shared/`); duplicating code across features is acceptable, so propose and get approval before moving code to `Shared/`
+
+## Domain
+
+- `Domain/` holds entities, value objects, enums, domain exceptions, and repository interfaces
+
+## Application
+
+- `Application/` has one directory per use case, containing a handler and its input (e.g., `User/CreateUser/CreateUserHandler`, `User/CreateUser/CreateUserInput`)
+- Read-only queries go through a `*ReaderInterface` that returns `*Record` DTOs; put the interface and records in the feature directory of `Application/` (e.g., `Application/User/UserReaderInterface`, `Application/User/UserRecord`) and the implementation in `Infrastructure/`
+
+## Infrastructure
+
+- `Infrastructure/` holds controllers, Doctrine repository and reader implementations, security (authenticators and voters), console commands, Twig extensions, and other framework integrations
+- Rely on autowiring to bind interfaces to their only implementation; configure the binding in `config/services.yaml` only when an interface has multiple implementations
