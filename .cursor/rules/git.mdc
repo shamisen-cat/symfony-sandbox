@@ -1,0 +1,32 @@
+---
+description: Branch workflow, Conventional Commits, and pull request conventions
+alwaysApply: true
+---
+
+# Git
+
+## Branches
+
+- Branch flow: work branches → `develop` → `main`
+- Create work branches from `develop`, named `<type>/<short-description>` where `<type>` is a commit type (e.g., `feat/user-login`)
+- Do not commit directly to `develop` or `main`
+- Do not merge into `develop` or `main` unless explicitly asked
+- Merge work branches into `develop`, and `develop` into `main`, with `git merge --no-ff`, keeping Git's default merge message
+- After merging a work branch into `develop`, delete it with `git branch -d`
+
+## Commit Messages
+
+- Follow the Conventional Commits format
+- Use one of these types: `chore`, `docs`, `feat`, `fix`, `refactor`, `style`, `test`
+- Do not include a scope
+- Omit the body if the description says it all
+- When a body is needed, write it as a bulleted list using `-`, with each item ending in a noun
+- Leave out incidental changes unrelated to the main purpose (formatting, reordering, minor comment tweaks, typo fixes, adding words to `cspell.json`, etc.)
+
+## Pull Requests
+
+- Target `develop` from work branches
+- Write the title in the Conventional Commits format, following the Commit Messages section
+- Use `## Summary` and `## Test plan` sections in the body
+- Write the Test plan as a bulleted list using `-`, not checkboxes (`- [ ]`)
+- Propose the title and body, and get approval before creating the pull request

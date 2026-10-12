@@ -1,0 +1,45 @@
+{
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
+        "**/var/**": true,
+        "**/vendor/**": true,
+    },
+
+    "intelephense.environment.phpVersion": "8.4.0",
+    "intelephense.format.enable": false,
+    "intelephense.files.exclude": [
+        "**/.git/**",
+        "**/.svn/**",
+        "**/.hg/**",
+        "**/CVS/**",
+        "**/.DS_Store/**",
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/vendor/**/{Tests,tests}/**",
+        "**/.history/**",
+        "**/vendor/**/vendor/**",
+        "**/var/cache/**",
+    ],
+
+    "php-cs-fixer.config": ".php-cs-fixer.dist.php",
+    "php-cs-fixer.executablePath": "${workspaceFolder}/bin/php-cs-fixer",
+
+    "[css]": {
+        "editor.tabSize": 2,
+    },
+
+    "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer",
+        "editor.formatOnSave": true,
+    },
+
+    "[twig]": {
+        "editor.tabSize": 2,
+    },
+}
