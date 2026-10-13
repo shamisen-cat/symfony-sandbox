@@ -28,6 +28,7 @@
     "phpunit",
     "realpath",
     "shamisen",
-    "symfony"
+    "symfony",
+    "symfonycasts"
   ]
 }
