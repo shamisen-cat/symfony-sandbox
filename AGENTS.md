@@ -10,6 +10,7 @@
 
 - PHP 8.4 (`~8.4.0` in `composer.json`)
 - Symfony 7.4
+- Monolog for logging
 - PostgreSQL 18 with Doctrine ORM
 - Twig for templates
 - AssetMapper for frontend assets (no Node.js build step)
