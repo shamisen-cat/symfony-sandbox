@@ -31,6 +31,7 @@
 ## Common Commands
 
 ```bash
+bin/console tailwind:build --watch
 vendor/bin/php-cs-fixer fix
 vendor/bin/phpstan analyse
 vendor/bin/phpunit
