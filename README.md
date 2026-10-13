@@ -11,6 +11,7 @@ A playground for learning and experimenting with Symfony.
 ## Tech Stack
 
 - PHP 8.4 / Symfony 7.4
+- SecurityBundle
 - Monolog
 - PostgreSQL 18 / Doctrine ORM
 - Twig / AssetMapper / Tailwind CSS / Stimulus
