@@ -15,7 +15,7 @@ A playground for learning and experimenting with Symfony.
 - Monolog
 - PostgreSQL 18 / Doctrine ORM
 - Twig / AssetMapper / Tailwind CSS / Stimulus
-- PHP-CS-Fixer / PHPStan / PHPUnit
+- PHP-CS-Fixer / Prettier / PHPStan / PHPUnit
 - Dev Container (Docker Compose: `php-fpm`, `nginx`, `db`)
 
 ## Prerequisites
@@ -28,7 +28,7 @@ A playground for learning and experimenting with Symfony.
 
 1. Open this repository in VS Code.
 2. Reopen in the Dev Container when prompted (or use **Dev Containers: Reopen in Container**).
-3. Wait for the post-create script to finish (`composer install` when `composer.json` is present).
+3. Wait for the post-create script to finish (`composer install` when `composer.json` is present; `npm ci` when `package-lock.json` is present).
 4. Build Tailwind CSS once with `bin/console tailwind:build` (use `--watch` while editing styles).
 5. Open [http://localhost:8080](http://localhost:8080) in your browser.
 
