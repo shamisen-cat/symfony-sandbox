@@ -5,3 +5,8 @@ set -euo pipefail
 if [ -f "composer.json" ]; then
   composer install
 fi
+
+# Install npm dependencies
+if [ -f "package-lock.json" ]; then
+  npm ci
+fi
