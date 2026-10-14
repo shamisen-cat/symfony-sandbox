@@ -17,7 +17,8 @@
 - AssetMapper for frontend assets (no Node.js build step)
 - Tailwind CSS for styling
 - Stimulus for JavaScript behavior
-- PHP-CS-Fixer for code style
+- PHP-CS-Fixer for PHP code style
+- Prettier for JavaScript and CSS formatting
 - PHPStan for static analysis
 - PHPUnit for testing
 - Dev Container (Docker Compose with `php-fpm`, `nginx`, and `db` services)
@@ -34,6 +35,7 @@
 ```bash
 bin/console tailwind:build --watch
 vendor/bin/php-cs-fixer fix
+npx prettier --write .
 vendor/bin/phpstan analyse
 vendor/bin/phpunit
 ```
