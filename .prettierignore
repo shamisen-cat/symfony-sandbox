@@ -1,0 +1,13 @@
+**/*.json
+**/*.md
+**/*.yaml
+**/*.yml
+
+/.prettierrc
+/assets/controllers/csrf_protection_controller.js
+/assets/vendor/
+/node_modules/
+/public/assets/
+/public/bundles/
+/var/
+/vendor/

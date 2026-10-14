@@ -1,6 +1,9 @@
 {
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
 
     "files.eol": "\n",
     "files.insertFinalNewline": true,
@@ -32,6 +35,13 @@
 
     "[css]": {
         "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+    },
+
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
     },
 
     "[php]": {

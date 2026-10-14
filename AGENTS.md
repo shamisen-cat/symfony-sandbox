@@ -10,13 +10,17 @@
 
 - PHP 8.4 (`~8.4.0` in `composer.json`)
 - Symfony 7.4
+- SecurityBundle for authentication and authorization
+- Monolog for logging
 - PostgreSQL 18 with Doctrine ORM
 - Twig for templates
 - AssetMapper for frontend assets (no Node.js build step)
 - Tailwind CSS for styling
 - Stimulus for JavaScript behavior
-- PHP-CS-Fixer for code style
+- PHP-CS-Fixer for PHP code style
+- Prettier for JavaScript and CSS formatting
 - PHPStan for static analysis
+- ESLint for JavaScript static analysis
 - PHPUnit for testing
 - Dev Container (Docker Compose with `php-fpm`, `nginx`, and `db` services)
 
@@ -30,8 +34,11 @@
 ## Common Commands
 
 ```bash
+bin/console tailwind:build --watch
 vendor/bin/php-cs-fixer fix
+npx prettier --write .
 vendor/bin/phpstan analyse
+npx eslint
 vendor/bin/phpunit
 ```
 

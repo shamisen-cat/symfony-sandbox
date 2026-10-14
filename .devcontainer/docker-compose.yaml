@@ -15,8 +15,6 @@ services:
     volumes:
       - ../:/var/www/html
       - ./php-fpm/php.ini:/usr/local/etc/php/conf.d/99-custom.ini:ro
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
     depends_on:
       db:
         condition: service_healthy
