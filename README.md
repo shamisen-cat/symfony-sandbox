@@ -15,7 +15,7 @@ A playground for learning and experimenting with Symfony.
 - Monolog
 - PostgreSQL 18 / Doctrine ORM
 - Twig / AssetMapper / Tailwind CSS / Stimulus
-- PHP-CS-Fixer / Prettier / PHPStan / PHPUnit
+- PHP-CS-Fixer / Prettier / PHPStan / ESLint / PHPUnit
 - Dev Container (Docker Compose: `php-fpm`, `nginx`, `db`)
 
 ## Prerequisites

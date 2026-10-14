@@ -3,7 +3,7 @@ name: pre-commit-check
 description: >-
   Run code style fixes, static analysis, and tests, then restore
   config/reference.php before committing. Use before committing changes to PHP
-  code, configuration, or templates.
+  code, JavaScript, configuration, or templates.
 disable-model-invocation: true
 ---
 
@@ -26,6 +26,7 @@ Run these steps in order from the project root. Skip this check when the changes
 
    ```bash
    vendor/bin/phpstan analyse
+   npx eslint
    ```
 
 3. Run the tests.

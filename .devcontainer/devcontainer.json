@@ -12,6 +12,7 @@
       "extensions": [
         "bmewburn.vscode-intelephense-client",
         "DavidAnson.vscode-markdownlint",
+        "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "junstyle.php-cs-fixer",
         "mblode.twig-language-2",
